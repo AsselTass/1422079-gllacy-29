@@ -1,0 +1,191 @@
+/* Variables */
+
+:root {
+  --basic-black: #323232;
+  --basic-white: #ffffff;
+  --basic-pistachio: #849D8F;
+
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--basic-white);
+    background-color: var(--basic-pistachio);
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.open-hours {
+  line-height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.open-hours a {
+  line-height: 24px;
+  font-size: 22px;
+  color: var(--basic-white);
+}
+
+/* Features */
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-description {
+  line-height: 30px;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--basic-black);
+}
+.feature-item {
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 16px;
+  color: var(--basic-black);
+}
+
+.catalog-item-price {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.catalog-item {
+  line-height: 22px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--basic-white);
+}
+
+/* Blog */
+.blog {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+.blog a{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-decoration: underline;
+}
+
+.mailing {
+  line-height: 22px;
+  color: var(--basic-black);
+}
+
+.mailing-box input {
+  font: inherit;
+  background-color: transparent;
+  border: 1px solid var(--basic-black);
+}
+
+.contacts {
+  color: var(--basic-black);
+}
+
+.contacts h3{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts-address {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.contacts a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: inherit;
+}
+
+.footer-contacts a {
+  color: var(--basic-white);
+}
+
+.social-list {
+  list-style: none;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  font-size: 18px;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  border: none;
+}
+
