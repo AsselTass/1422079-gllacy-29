@@ -157,7 +157,7 @@ img {
   background-color: var(--darker-white);
 }
 
-.contacts h3{
+.contacts h3,p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -210,10 +210,9 @@ img {
 
 .button:hover{
   background: var(--red-lighter), var(--red-gradient);
-  box-shadow: 0px 2px 2px 0px #942718 inset;
 }
 
-.button:focus {
+.button:active {
   background: var(--red-darker), var(--red-gradient);
   box-shadow: 0px 2px 2px 0px #AC1000;
 
