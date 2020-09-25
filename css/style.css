@@ -114,6 +114,12 @@ img {
   text-align: left;
 }
 
+.pagination a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
 .sliders h3 {
   font-size: 60px;
   line-height: 60px;
@@ -171,6 +177,7 @@ img {
 }
 
 /* Blog */
+
 .blog {
   font-weight: 500;
   color: var(--basic-black);
@@ -206,7 +213,7 @@ img {
   background-color: var(--darker-white);
 }
 
-.contacts h3,p {
+.contacts h3, p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -224,6 +231,10 @@ img {
   color: var(--basic-white);
   font-size: 13px;
   line-height: 18px;
+}
+
+.footer-copyright a {
+  font-size: 12px;
 }
 
 .social-list {
