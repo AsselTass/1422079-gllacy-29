@@ -11,8 +11,6 @@
   --red-lighter: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 
   --red-darker: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
-
-
 }
 
 /* Global */
@@ -91,7 +89,57 @@ img {
 .open-hours a {
   line-height: 24px;
   font-size: 22px;
+  font-weight: 700;
   color: var(--basic-white);
+}
+
+.catalog-hierarchy {
+  line-height: 16px;
+  font-size: 14px;
+  color: var(--basic-white);
+}
+
+.page-catalog ul {
+  list-style: none;
+}
+
+.page-catalog a {
+  color: var(--basic-white);
+}
+
+.page-catalog h1 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  text-align: left;
+}
+
+.sliders h3 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.filters legend {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.additional-topping ul {
+  list-style: none;
+}
+
+.additional-topping h3 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.additional-topping p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
 }
 
 /* Features */
@@ -106,6 +154,7 @@ img {
   font-size: 24px;
   color: var(--basic-black);
 }
+
 .feature-item {
   color: var(--basic-black);
 }
@@ -171,14 +220,6 @@ img {
   text-align: left;
 }
 
-.contacts a {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: left;
-  color: inherit;
-}
-
 .useful-links a {
   color: var(--basic-white);
   font-size: 13px;
@@ -201,11 +242,16 @@ img {
   vertical-align: middle;
   background: var(--red-gradient);
   border: none;
-  font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  box-shadow: 0px 2px 2px 0px #AC1000 64%;
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  border-radius: 70px;
+  position: absolute;
+}
 
+.slider-button {
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .button:hover{
@@ -215,5 +261,19 @@ img {
 .button:active {
   background: var(--red-darker), var(--red-gradient);
   box-shadow: 0px 2px 2px 0px #AC1000;
+}
 
+.contacts-button {
+  color: var(--basic-white);
+}
+
+.contacts a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.contacts-tel {
+  color: var(--basic-black);
 }
