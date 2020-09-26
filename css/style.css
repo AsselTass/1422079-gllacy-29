@@ -93,7 +93,7 @@ img {
   color: var(--basic-white);
 }
 
-.catalog-hierarchy {
+.breadcrumbs {
   line-height: 16px;
   font-size: 14px;
   color: var(--basic-white);
@@ -171,7 +171,7 @@ img {
   line-height: 45px;
 }
 
-.catalog-item {
+.catalog-item-title {
   font-weight: 500;
   color: var(--basic-white);
 }
