@@ -148,6 +148,15 @@ img {
   line-height: 22px;
 }
 
+.topping1 {
+  height: 229px;
+  width: 560px;
+  border-radius: 16px;
+}
+
+.topping {
+}
+
 /* Features */
 
 .feature-list {
