@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
@@ -7,23 +7,21 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header>
+    <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип глейси">
         </a>
         <div class="main-navigation-wrapper">
-          <div class="container">
-            <ul class="site-navigation">
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="">Доставка и оплата</a></li>
-              <li><a href="">О компании</a></li>
-            </ul>
-            <div class="user-navigation">
-              <a href="">Поиск</a>
-              <a class="login-link" href="login.html">Вход</a>
-              <a href="">Пусто</a>
-            </div>
+          <ul class="site-navigation">
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="">Доставка и оплата</a></li>
+            <li><a href="">О компании</a></li>
+          </ul>
+          <div class="user-navigation">
+            <a href="">Поиск</a>
+            <a class="login-link" href="login.html">Вход</a>
+            <a href="">Пусто</a>
           </div>
         </div>
       </nav>
@@ -59,8 +57,8 @@
           <button></button>
         </div>
       </div>
-      <section  class="additional-topping">
-        <ul>
+      <section>
+        <ul class="additional-topping">
           <li>
             <div class="topping1">
               <h3>Малинка даром!</h3>
@@ -79,32 +77,34 @@
       </section>
       <section>
         <h2 class="visually-hidden">Каталог</h2>
-        <div>
-          <img src="img/hit1.png" alt="Мороженое хит1" width="267" height="267">
-          <p class="catalog-item-price">310 Р/кг</p>
-          <a href="#" class="catalog-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          <a href="" class="button">Быстрый просмотр</a>
-        </div>
-        <div>
-          <img src="img/hit2.png" alt="Мороженое хит2" width="267" height="267">
-          <p class="catalog-item-price">380 Р/кг</p>
-          <a href="#" class="catalog-item">Сливочно-кофейное с кусочками шоколада</a>
-          <a href="" class="button">Быстрый просмотр</a>
-        </div>
-        <div>
-          <img src="img/hit3.png" alt="Мороженое хит3" width="267" height="267">
-          <p class="catalog-item-price">355 Р/кг</p>
-          <a href="#" class="catalog-item">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          <a href="" class="button">Быстрый просмотр</a>
-        </div>
-        <div>
-          <img src="img/hit4.png" alt="Мороженое хит4" width="267" height="267">
-          <p class="catalog-item-price">415 Р/кг</p>
-          <a href="#" class="catalog-item">Сливочное крем-брюле с карамельной подливкой</a>
-          <a href="" class="button">Быстрый просмотр</a>
+        <div class="hit-catalog">
+          <div class="hit-catalog-item">
+            <img src="img/hit1.png" alt="Мороженое хит1" width="267" height="267">
+            <p class="catalog-item-price">310 Р/кг</p>
+            <a href="#" class="catalog-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a href="" class="button">Быстрый просмотр</a>
+          </div>
+          <div class="hit-catalog-item">
+            <img src="img/hit2.png" alt="Мороженое хит2" width="267" height="267">
+            <p class="catalog-item-price">380 Р/кг</p>
+            <a href="#" class="catalog-item">Сливочно-кофейное с кусочками шоколада</a>
+            <a href="" class="button">Быстрый просмотр</a>
+          </div>
+          <div class="hit-catalog-item">
+            <img src="img/hit3.png" alt="Мороженое хит3" width="267" height="267">
+            <p class="catalog-item-price">355 Р/кг</p>
+            <a href="#" class="catalog-item">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a href="" class="button">Быстрый просмотр</a>
+          </div>
+          <div class="hit-catalog-item">
+            <img src="img/hit4.png" alt="Мороженое хит4" width="267" height="267">
+            <p class="catalog-item-price">415 Р/кг</p>
+            <a href="#" class="catalog-item">Сливочное крем-брюле с карамельной подливкой</a>
+            <a href="" class="button">Быстрый просмотр</a>
+          </div>
         </div>
       </section>
-      <section>
+      <section class="container">
         <h3 class="feature-description">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
         <ul class="feature-list">
           <li class="feature-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -113,7 +113,7 @@
           <li class="feature-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
-      <section>
+      <section class="blog-email">
         <div class="blog">
           <h3>Новое в нашем блоге</h3>
           <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -168,11 +168,13 @@
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
+    </section>
+    <section>
       <p class="footer-copyright">
         <img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии">
         <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано HTML Academy 2019</a>
       </p>
-      </section>
+    </section>
     </div>
   </footer>
   </body>
