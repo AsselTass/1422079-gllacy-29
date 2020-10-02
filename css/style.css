@@ -39,7 +39,8 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 1146px;
+  margin: 0 auto;
 }
 
 /* Grid */
@@ -59,6 +60,9 @@ img {
 
 .main-header {
   margin-bottom: 24px;
+  width: 1146px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* Main navigation */
@@ -147,7 +151,7 @@ img {
   line-height: 18px;
 }
 
-.sliders {
+.sliders-item {
   justify-content: center;
 }
 
