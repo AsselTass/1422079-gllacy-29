@@ -12,17 +12,15 @@
         <a class="main-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип глейси">
         </a>
-        <div class="main-navigation-wrapper">
-          <ul class="site-navigation">
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="">Доставка и оплата</a></li>
-            <li><a href="">О компании</a></li>
-          </ul>
-          <div class="user-navigation">
-            <a href="">Поиск</a>
-            <a class="login-link" href="login.html">Вход</a>
-            <a href="">Пусто</a>
-          </div>
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">О компании</a></li>
+        </ul>
+        <div class="user-navigation">
+          <a href="">Поиск</a>
+          <a class="login-link" href="login.html">Вход</a>
+          <a href="">Пусто</a>
         </div>
       </nav>
       <div class="open-hours">
@@ -30,44 +28,45 @@
         <a href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </header>
-    <main class="container">
+    <main>
+      <div class="container">
       <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
-      <div class="sliders">
-        <section>
+      <section class="sliders">
+        <div class="sliders">
           <h2 class="visually-hidden">Слайды</h2>
           <div class="sliders-item">
-            <img src="img/slidegroup1.png" width="372" height="584" alt="Слайдер 1 фото">
+            <img src="img/slidegroup1.png" width="647" height="584" alt="Слайдер 1 фото">
             <h3>Крем-брюле и пломбир с малиновым джемом</h3>
             <a href="" class="button slider-button">Давайте оба!</a>
           </div>
           <div class="sliders-item">
-            <img src="img/slidegroup2.png" width="372" height="584" alt="Слайдер 1 фото">
+            <img src="img/slidegroup2.png" width="647" height="584" alt="Слайдер 1 фото">
             <h3 class="main-slider-description">Шоколадный пломбир и лимонный сорбет</h3>
             <a href="" class="button slider-button">Давайте оба!</a>
           </div>
           <div class="sliders-item">
-            <img src="img/slidegroup3.png" width="372" height="584" alt="Слайдер 1 фото">
+            <img src="img/slidegroup3.png" width="639" height="582" alt="Слайдер 1 фото">
             <h3 class="main-slider-description">Пломбир с помадкой и клубничный щербет</h3>
             <a href="" class="button slider-button">Давайте оба!</a>
           </div>
-        </section>
+        </div>
         <div>
           <button></button>
           <button></button>
           <button></button>
         </div>
-      </div>
+      </section>
       <section>
         <ul class="additional-topping">
           <li>
-            <div class="topping1">
+            <div class="topping raspberry">
               <h3>Малинка даром!</h3>
               <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a href="#" class="button topping-button">Хочу варенье!</a>
             </div>
           </li>
           <li>
-            <div class="topping2">
+            <div class="topping chocolate">
               <h3>Шоколадка даром!</h3>
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку шоколадной присыпки совершенно бесплатно.</p>
               <a href="#" class="button topping-button">Хочу шоколадку!</a>
@@ -126,9 +125,9 @@
           </form>
         </div>
       </section>
-      <section>
-        <img src="img/map.png" alt="Адрес Пин" height ="430" width="1200">
-      </section>
+    </div>
+    <section class="map">
+      <img src="img/map.png" alt="Адрес Пин" height ="430">
       <div class="contacts">
         <h3>Адрес главного офиса и офлайн-магазина: </h3>
         <p class="contacts-address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
@@ -137,6 +136,7 @@
         <p>(с 10 до 20 ежедневно)</p>
         <a class="button contacts-button" href="form.html">Форма обратной связи</a>
       </div>
+    </section>
     </main>
   <footer class="page-footer main-footer">
     <div class="container">
@@ -144,9 +144,6 @@
         <h2 class="visually-hidden">Давайте дружить!</h2>
         <ul class="social-list">
           <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
             <a href="#">Фейсбук</a>
           </li>
           <li>
