@@ -93,12 +93,6 @@ img {
   background-color: transparent;
 }
 
-.main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: auto min-content;
-  margin-top: 32px;
-}
-
 .site-navigation {
   list-style: none;
 }
@@ -229,6 +223,7 @@ img {
   padding: 16px 22px 22px 16px;
   box-sizing: border-box;
 }
+
 .raspberry {
   background-color: crimson;
 }
@@ -272,6 +267,7 @@ img {
 .hit-catalog-item {
   padding: 6px 13px 21px 13px;
 }
+
 .catalog-item-price {
   font-weight: 700;
   font-size: 45px;
