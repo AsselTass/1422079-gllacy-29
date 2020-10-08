@@ -161,8 +161,14 @@ img {
   line-height: 16px;
   font-size: 14px;
   color: var(--basic-white);
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
+.breadcrumbs li {
+  margin: 28px 22px 13px 0;
+}
 .page-catalog ul {
   list-style: none;
 }
@@ -176,12 +182,26 @@ img {
   font-weight: 700;
   line-height: 41px;
   text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination a {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+}
+
+.pagination li{
+  margin-right: 20px;
 }
 
 .sliders-item img {
