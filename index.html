@@ -13,19 +13,20 @@
         <a class="main-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип глейси">
         </a>
-        <div class="site-navigation">
-          <div><a href="catalog.html">Каталог</a>
-          <!--  <ul>
-              <li><a href="#">Новинки</a></li>
-              <li><a href="#">Сливочное</a></li>
-              <li><a href="#">Щеррбеты</a></li>
-              <li><a href="#">Вруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul> -->
-          </div>
-          <div><a href="">Доставка и оплата</a></div>
-          <div><a href="">О компании</a></div>
-        </div>
+        <ul class="site-navigation">
+          <li class="site-menu-item">
+            <a class="site-menu-link" href="catalog.html" class="dropbtn">Каталог</a>
+            <ol сlass="submenu">
+              <li class="submenu-item"><a href="#">Новинки</a></li>
+              <li class="submenu-item"><a href="#">Сливочное</a></li>
+              <li class="submenu-item"><a href="#">Щеррбеты</a></li>
+              <li class="submenu-item"><a href="#">Вруктовый лед</a></li>
+              <li class="submenu-item"><a href="#">Мелорин</a></li>
+            </ol>
+          </li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">О компании</a></li>
+        </ul>
         <ul class="user-navigation">
           <li class="user-navigation-item">
             <a class="user-links search-link" href="">
@@ -105,9 +106,9 @@
           </li>
           <li>
             <div class="topping chocolate">
-              <h3>Шоколадка даром!</h3>
-              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку шоколадной присыпки совершенно бесплатно.</p>
-              <a href="#" class="button topping-button">Хочу шоколадку!</a>
+              <h3>Шоколадки даром!</h3>
+              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a href="#" class="button topping-button">Хочу шоколадки!</a>
             </div>
           </li>
         </ul>
@@ -116,28 +117,32 @@
         <h2 class="visually-hidden">Каталог</h2>
         <div class="hit-catalog">
           <div class="hit-catalog-item">
-            <img src="img/hit1.png" alt="Мороженое хит1" width="267" height="267">
-            <p class="catalog-item-price">310 Р/кг</p>
+            <img src="img/hit1.png" alt="Мороженое хит1" width="270" height="270">
+            <img src="img/hit-tag.png" class="hit-tag">
+            <p class="catalog-item-price">310 Р<span>/кг</span></p>
             <a href="#" class="catalog-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <a href="" class="button">Быстрый просмотр</a>
+            <!--<a href="" class="button">Быстрый просмотр</a>-->
           </div>
           <div class="hit-catalog-item">
-            <img src="img/hit2.png" alt="Мороженое хит2" width="267" height="267">
-            <p class="catalog-item-price">380 Р/кг</p>
+            <img src="img/hit2.png" alt="Мороженое хит2" width="270" height="270">
+            <img src="img/hit-tag.png" class="hit-tag">
+            <p class="catalog-item-price">380 Р<span>/кг</span></p>
             <a href="#" class="catalog-item">Сливочно-кофейное с кусочками шоколада</a>
-            <a href="" class="button">Быстрый просмотр</a>
+            <!--<a href="" class="button">Быстрый просмотр</a>-->
           </div>
           <div class="hit-catalog-item">
-            <img src="img/hit3.png" alt="Мороженое хит3" width="267" height="267">
-            <p class="catalog-item-price">355 Р/кг</p>
-            <a href="#" class="catalog-item">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            <a href="" class="button">Быстрый просмотр</a>
+            <img src="img/hit3.png" alt="Мороженое хит3" width="270" height="270">
+            <img src="img/hit-tag.png" class="hit-tag">
+            <p class="catalog-item-price">355 Р<span>/кг</span></p>
+            <a href="#" class="catalog-item">Сливочно-клубничное <br>с присыпкой из белого шоколада</a>
+            <!--<a href="" class="button">Быстрый просмотр</a>-->
           </div>
           <div class="hit-catalog-item">
-            <img src="img/hit4.png" alt="Мороженое хит4" width="267" height="267">
-            <p class="catalog-item-price">415 Р/кг</p>
-            <a href="#" class="catalog-item">Сливочное крем-брюле с карамельной подливкой</a>
-            <a href="" class="button">Быстрый просмотр</a>
+            <img src="img/hit4.png" alt="Мороженое хит4" width="270" height="270">
+            <img src="img/hit-tag.png" class="hit-tag">
+            <p class="catalog-item-price">415 Р<span>/кг</span></p>
+            <a href="#" class="catalog-item">Сливочное крем-брюле <br>с карамельной подливкой</a>
+            <!--<a href="" class="button">Быстрый просмотр</a>-->
           </div>
         </div>
       </section>
@@ -153,27 +158,27 @@
       <section class="blog-email">
         <div class="extra blog">
           <h3>Новое в нашем блоге</h3>
-          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          <a href="#">10 способов сервировки фруктовых щербетов <br>к столу</a>
         </div>
         <div class="extra mailing">
           <div class="mailing-paper">
             <h3>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</h3>
             <form class="mailing-box">
-              <input id="email-field" type="text" name="date" placeholder="email@example.com">
-              <button class="button" type="submit">Отправить</button>
+              <input class="email-field" type="text" name="date" placeholder="email@example.com">
+              <button class="button mailing-button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
       </section>
     </div>
     <section class="map">
-      <img class="map-image" src="img/map.png" alt="Адрес Пин" height ="430">
+      <img class="map-image" src="img/map-pin.png" alt="Адрес Пин" height ="430">
       <div class="contacts">
         <div class="contacts-address">
           <h3>Адрес главного офиса и офлайн-магазина: </h3>
           <p class="contacts-street">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
         </div>
-        <div class="contacts-tel">
+        <div class="contacts-time">
           <h3>Для заказов по телефону:</h3>
           <a href="tel:88124502525" class="contacts-tel">8 812 450-25-25</a>
           <p>(с 10 до 20 ежедневно)</p>
@@ -232,15 +237,15 @@
     <section class="useful-links">
       <h2 class="visually-hidden">Полезные ссылки</h2>
       <ul class="useful-links-items">
-        <li class="useful-links-item"><a href="#">Для поставщиков</a></li>
-        <li class="useful-links-item"><a href="#">Наши документы</a></li>
-        <li class="useful-links-item"><a href="#">О производстве</a></li>
-        <li class="useful-links-item"><a href="#">Экологические стандарты</a></li>
+        <li class="useful-links-item"><a class=" link-one" href="#">Для поставщиков</a></li>
+        <li class="useful-links-item"><a class=" link-two" href="#">Наши документы</a></li>
+        <li class="useful-links-item"><a class=" link-three" href="#">О производстве</a></li>
+        <li class="useful-links-item"><a class=" link-four" href="#">Экологические стандарты</a></li>
       </ul>
     </section>
     <section class="footer-copyright">
       <a><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
-      <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy 2019</a>
+      <p class="logo-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </section>
     </div>
