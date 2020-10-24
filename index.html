@@ -15,17 +15,21 @@
         </a>
         <ul class="site-navigation">
           <li class="site-menu-item">
-            <a class="site-menu-link" href="catalog.html" class="dropbtn">Каталог</a>
-            <ol сlass="submenu">
-              <li class="submenu-item"><a href="#">Новинки</a></li>
-              <li class="submenu-item"><a href="#">Сливочное</a></li>
-              <li class="submenu-item"><a href="#">Щеррбеты</a></li>
-              <li class="submenu-item"><a href="#">Вруктовый лед</a></li>
-              <li class="submenu-item"><a href="#">Мелорин</a></li>
-            </ol>
+            <a class="site-menu-link"href="catalog.html">Каталог</a>
+            <ul class="sub-menu">
+              <li class="sub-menu-item"><a href="#" >Новинки</a></li>
+              <li class="sub-menu-item"><a href="#" >Сливочное</a></li>
+              <li class="sub-menu-item"><a href="#">Щеррбеты</a></li>
+              <li class="sub-menu-item"><a href="#">Фруктовый лед</a></li>
+              <li class="sub-menu-item"><a href="#">Мелорин</a></li>
+            </ul>
           </li>
-          <li><a href="">Доставка и оплата</a></li>
-          <li><a href="">О компании</a></li>
+          <li class="site-menu-item">
+            <a href="" class="site-menu-link">Доставка и оплата</a>
+          </li>
+          <li class="site-menu-item">
+            <a href="" class="site-menu-link">О компании</a>
+          </li>
         </ul>
         <ul class="user-navigation">
           <li class="user-navigation-item">
@@ -52,7 +56,7 @@
           </li>
           <li class="user-navigation-item">
             <a class="user-links cart-link" href="">
-              <svg class="user-links-icon" width="21" height="20" padding-right="8" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="user-links-icon" width="21" height="20"  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="currentColor"/>
                 <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="currentColor"/>
                 <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" fill="currentColor"/>
@@ -90,9 +94,9 @@
           </div>
         </div>
         <div class="slider-controls">
-          <button class="current" type="button" aria-label="Первый слайд"></button>
-          <button type="button" aria-label="Второй слайд"></button>
-          <button type="button" aria-label="Третий слайд"></button>
+          <button class="control-button current" type="button" aria-label="Первый слайд"></button>
+          <button class="control-button" type="button" aria-label="Второй слайд"></button>
+          <button class="control-button" type="button" aria-label="Третий слайд"></button>
         </div>
       </section>
       <section>
@@ -118,35 +122,35 @@
         <div class="hit-catalog">
           <div class="hit-catalog-item">
             <img src="img/hit1.png" alt="Мороженое хит1" width="270" height="270">
-            <img src="img/hit-tag.png" class="hit-tag">
+            <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг">
             <p class="catalog-item-price">310 Р<span>/кг</span></p>
             <a href="#" class="catalog-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <!--<a href="" class="button">Быстрый просмотр</a>-->
+            <a href="" class="button hit-catalog-button">Быстрый просмотр</a>
           </div>
           <div class="hit-catalog-item">
             <img src="img/hit2.png" alt="Мороженое хит2" width="270" height="270">
-            <img src="img/hit-tag.png" class="hit-tag">
+            <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг">
             <p class="catalog-item-price">380 Р<span>/кг</span></p>
             <a href="#" class="catalog-item">Сливочно-кофейное с кусочками шоколада</a>
-            <!--<a href="" class="button">Быстрый просмотр</a>-->
+            <a href="" class="button hit-catalog-button">Быстрый просмотр</a>
           </div>
           <div class="hit-catalog-item">
             <img src="img/hit3.png" alt="Мороженое хит3" width="270" height="270">
-            <img src="img/hit-tag.png" class="hit-tag">
+            <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг">
             <p class="catalog-item-price">355 Р<span>/кг</span></p>
             <a href="#" class="catalog-item">Сливочно-клубничное <br>с присыпкой из белого шоколада</a>
-            <!--<a href="" class="button">Быстрый просмотр</a>-->
+            <a href="" class="button hit-catalog-button">Быстрый просмотр</a>
           </div>
           <div class="hit-catalog-item">
             <img src="img/hit4.png" alt="Мороженое хит4" width="270" height="270">
-            <img src="img/hit-tag.png" class="hit-tag">
+            <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг">
             <p class="catalog-item-price">415 Р<span>/кг</span></p>
             <a href="#" class="catalog-item">Сливочное крем-брюле <br>с карамельной подливкой</a>
-            <!--<a href="" class="button">Быстрый просмотр</a>-->
+            <a href="" class="button hit-catalog-button">Быстрый просмотр</a>
           </div>
         </div>
       </section>
-      <section class="container features">
+      <section class="features">
         <h3 class="feature-description">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
         <ul class="feature-list">
           <li class="feature-item ice-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -244,6 +248,7 @@
       </ul>
     </section>
     <section class="footer-copyright">
+      <h2 class="visually-hidden">Логотип академии</h2>
       <a><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
       <p class="logo-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
