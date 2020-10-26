@@ -31,7 +31,7 @@ body {
 }
 
 a {
-  color: white;
+  color: var(--basic-white);
   text-align: center;
 }
 
@@ -175,7 +175,7 @@ img {
   top: 100%;
   left: 0;
   margin: 5px 0 0;
-  background-color: white;
+  background-color: var(--basic-white);
   opacity: 0;
   pointer-events: none;
   list-style: none;
@@ -429,7 +429,7 @@ img {
   position: relative;
   padding-top: 313px;
   text-align: center;
-  color: #ffffff;
+  color: var(--basic-white);
   margin-bottom: 30px;
 }
 
@@ -490,7 +490,7 @@ img {
   width: 21px;
   height: 21px;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -500,15 +500,15 @@ img {
 }
 
 .slider-controls button:focus {
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
+  background-color: var(--basic-white)f;
+  border: 2px solid var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
   outline: none;
 }
 
 .slider-controls .current {
-  background-color: #ffffff;
+  background-color: var(--basic-white);
 }
 
 .filters legend {
@@ -699,13 +699,14 @@ img {
   line-height: 45px;
   position: absolute;
   top: 168px;
-  left: 10px;
+  left: 13px;
 }
 
 .catalog-item-price span{
   font-size: 30px;
   font-weight: 700;
   line-height: 35px;
+  margin-left: 2px;
 }
 
 .catalog-item-title {
@@ -788,7 +789,7 @@ img {
 }
 
 .email-field {
-  background: #FFFFFF;
+  background: var(--basic-white);
   box-sizing: border-box;
   border-radius: 6px;
   font-family: 'Roboto',"Arial", sans-serif;
