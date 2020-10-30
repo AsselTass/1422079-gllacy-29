@@ -155,6 +155,11 @@ img {
   padding: 0;
 }
 
+.site-menu-link a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .site-menu-item {
   position: relative;
   margin-right: 7px;
@@ -164,11 +169,19 @@ img {
   display: block;
   border-radius: 26px;
   padding: 10px 13px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
 }
 
 .site-active {
   background-color:#D07058;
   text-decoration: none;
+}
+
+.site-active a {
+  border-bottom: none;
 }
 
 .cart-link {
@@ -258,6 +271,13 @@ img {
   box-shadow: inset 0 2px 1px #696969;
 }
 
+.site-menu-link:hover a{
+  color: var(--basic-black);
+}
+
+.site-menu-link:active a{
+  color: var(--basic-black);
+}
 /*
 .user-navigation {
   margin-left: auto;
@@ -358,6 +378,7 @@ img {
   margin: 0;
   padding: 0;
   z-index: 5;
+  position: relative;
 }
 
 .breadcrumbs li {
@@ -367,6 +388,11 @@ img {
 
 .breadcrumbs-next {
   position: relative;
+}
+
+.breadcrumbs-next a{
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .breadcrumbs-next::after {
@@ -431,31 +457,18 @@ img {
   margin-left: 2px;
 }
 
-.pagination-start,
-.pagination-end {
-  position: relative;
-}
-
-.pagination-start::before {
-  background-image: url(../img/icon-right-small.svg);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  content: "";
+.pagination-start {
   width: 7px;
-  height: 12px;
-  top: 5px;
   left: 90px;
   transform: rotate(-180deg);
   left: -24px;
+  fill-opacity: rgba(255, 255, 255, 0.2);
+}
+.pagination-start path{
+  fill: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-end::after {
-  background-image: url(../img/icon-right-small.svg);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  content: "";
+.pagination-end {
   width: 7px;
   height: 12px;
   top: 5px;
@@ -564,6 +577,18 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+}
+
+.filter-button:hover {
+  color: var(--basic-black);
+  background: var(--basic-white);
+}
+
+.filter-button:active {
+  color: var(--basic-black);
+  background: var(--basic-white);
+  box-shadow: inset 0 2px 1px #696969;
+  border: none;
 }
 
 .additional-topping {
@@ -707,7 +732,7 @@ img {
 }
 
 .hit-catalog-item {
-  padding: 6px 13px 10px;
+  padding: 7px 13px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -726,6 +751,7 @@ img {
   background-color: rgba(255,255,255, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  z-index: 2;
 }
 
 .hit-catalog-item:hover .hit-catalog-button{
@@ -742,6 +768,17 @@ img {
   margin-bottom: 14px;
   font-weight: 500;
   color: var(--basic-white);
+  text-align: center;
+}
+
+
+.catalog-item-title a{
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
 }
 
 .catalog-item-price {
@@ -974,6 +1011,11 @@ img {
   margin-top: -3px;
 }
 
+.logo-text a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .social-list {
   list-style: none;
 }
@@ -1024,32 +1066,38 @@ img {
   stroke-opacity: 1;
 }
 
-.catalog-item-title:hover,
-.catalog-item-title:active,
+.breadcrumbs-next:hover a,
+.breadcrumbs-next:active a,
+.catalog-item-title:hover a,
+.catalog-item-title:active a,
 .logo-text a:hover,
 .logo-text a:active,
 .link-one:hover,
 .link-one:active{
   color: var(--red-light);
-  border-bottom: 1px var(--red-light);
+  color: #FFBC9E;
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 .link-two:hover,
 .link-two:active {
   color: var(--red-light);
-  border-bottom:: var(--red-light);
+  color: #FFBC9E;
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 .link-three:hover ,
 .link-three:active {
   color: var(--red-light);
-  border-bottom:: var(--red-light);
+  color: #FFBC9E;
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 .link-four:hover ,
 .link-four:active {
   color: var(--red-light);
-  border-bottom: 1px var(--red-light);
+  color: #FFBC9E;
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 .useful-links a {
@@ -1110,6 +1158,8 @@ img {
 .useful-links-items a {
   font-size: 13px;
   line-height: 18px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .useful-links-item:nth-child(1) {
