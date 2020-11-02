@@ -200,7 +200,7 @@ img {
   list-style: none;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
-  z-index: 4;
+  z-index: 6;
   padding-left: 0;
 }
 
@@ -342,13 +342,85 @@ img {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   color: var(--basic-black);
-  z-index: 3;
+  z-index: 5;
+}
+
+.cart-list {
+  top: 50px;
+  bottom: auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 501px;
+  padding: 9px 19px 6px 20px;
+}
+
+.cart-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 18px;
+  margin-top: 10px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.cart-list-item {
+  margin-bottom: 13px;
+}
+
+.cart-item h2,
+.cart-item span {
+  padding: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.product-ava {
+  position: relative;
+  margin-right: 14px;
+}
+
+.product-name {
+  position: relative;
+  margin-right: 31px;
+}
+
+.product-ava::before {
+  background-image: url(../img/x.svg);
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  content: "";
+  left: -19px;
+  top: 10px;
+}
+
+.product-price {
+  margin-right: 26px;
+}
+
+.cart-summ {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-bottom: 12px;
+}
+
+.cart-button {
+  margin-left: auto;
+  padding: 11px 16px;
 }
 
 .open-hours {
   position: absolute;
   text-align: right;
-  z-index: 2;
+  z-index: 3;
 }
 .open-hours a {
   text-decoration: unset;
@@ -377,7 +449,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
-  z-index: 5;
+  z-index: 4;
   position: relative;
 }
 
@@ -429,7 +501,7 @@ img {
   display: flex;
   justify-content: flex-end;
   margin: 0;
-  padding: 48px 28px 31px 0;
+  padding: 48px 0 31px;
 }
 
 .pagination a {
@@ -458,21 +530,30 @@ img {
 }
 
 .pagination-start {
-  width: 7px;
+  min-width: 27px;
   left: 90px;
   transform: rotate(-180deg);
   left: -24px;
   fill-opacity: rgba(255, 255, 255, 0.2);
 }
+
+.pagination-start a {
+  min-width: 27px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+}
+
 .pagination-start path{
   fill: rgba(255, 255, 255, 0.2);
 }
 
 .pagination-end {
-  width: 7px;
-  height: 12px;
-  top: 5px;
-  left: 49px;
+  min-width: 27px;
+  box-sizing: border-box;
+}
+
+.pagination-end a{
+  padding: 4px 10px;
 }
 
 .sliders {
@@ -528,7 +609,6 @@ img {
   position: absolute;
   bottom: 22px;
   left: 0;
-  z-index: 20;
   z-index: 20;
   display: flex;
   width: 80px;
