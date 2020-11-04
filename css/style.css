@@ -1070,6 +1070,20 @@ img {
 
 .login-field {
   width: 241px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.search-modal {
+  padding: 20px 12px;
+}
+
+.search-field {
+  width: 311px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .mailing-button {
