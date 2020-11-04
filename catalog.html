@@ -37,8 +37,10 @@
               <path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z" fill="currentColor"/>
             </svg>
           </a>
-            <div class="user-menu-tooltip">
-              тут форма поиска
+            <div class="user-menu-tooltip search-modal">
+              <form class="">
+                <input class="email-field" type="text" name="date" placeholder="Крем-брюле">
+              </form>
             </div>
           </li>
           <li class="user-navigation-item">
@@ -49,8 +51,18 @@
               </svg>
               <span>Вход</span>
             </a>
-            <div class="user-menu-tooltip">
-              тут форма входа
+            <div class="user-menu-tooltip login-modal">
+              <form class="login-form">
+                <input class="email-field login-field" type="text" name="date" placeholder="email@example.com">
+                <input class="email-field login-field" type="text" name="date" placeholder="*****">
+                <div class="password-restore">
+                  <button class="button login-button" type="submit">Войти</button>
+                  <div class="restore-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </form>
             </div>
           </li>
           <li class="user-navigation-item">
@@ -63,28 +75,32 @@
               </svg>
               <span>2 товара</span>
             </a>
-            <div class="user-menu-tooltip cart-list">
-              <ul class="cart-list-item">
-                <li class="cart-item">
-                  <div  class="product-ava"><img src="img/icecream-ava1.png"></div>
-                  <span class="product-name">Пломбир с апельсиновым джемом</span>
-                  <span class="product-price">1,5 кг х 200 руб.</span>
-                  <span>300 руб.</span>
-                </li>
-                <li class="cart-item">
-                  <div class="product-ava"><img src="img/icecream-ava2.png"></div>
-                  <span class="product-name">Клубничный пломбир с присыпкой<br> из белого шоколада </span>
-                  <span class="product-price">1,5 кг х 300 руб.</span>
-                  <span>450 руб.</span>
-                </li>
-              </ul>
-              <div class="cart-summ cart-list-item">Итого: 750 руб</div>
-              <a class="button cart-list-item cart-button" href="#">Оформить заказ</a>
+            <div class="user-menu-tooltip cart-modal modal">
+              <div class="cart-list">
+                <ul class="cart-list-item">
+                  <li class="cart-item">
+                    <button type="button" class="product-removal"></button>
+                    <div  class="product-ava"><img src="img/icecream-ava1.png"></div>
+                    <span class="product-name">Пломбир с апельсиновым джемом</span>
+                    <span class="product-price">1,5 кг х <span class="product-price-kg"> 200 руб.</span> </span>
+                    <span>300 руб.</span>
+                  </li>
+                  <li class="cart-item">
+                    <input type="button" class="product-removal">
+                    <div class="product-ava"><img src="img/icecream-ava2.png"></div>
+                    <span class="product-name">Клубничный пломбир с присыпкой<br> из белого шоколада </span>
+                    <span class="product-price">1,5 кг х <span class="product-price-kg">300 руб.</span> </span>
+                    <span>450 руб.</span>
+                  </li>
+                </ul>
+                <div class="cart-summ cart-list-item">Итого: 750 руб.</div>
+                <a class="button cart-list-item cart-button" href="#">Оформить заказ</a>
+              </div>
             </div>
           </li>
         </ul>
       </nav>
-      <div class="container open-hours">
+      <div class="open-hours">
         <p>с 10 до 20, ежедневно</p>
         <a href="tel:88124502525">8 812 450-25-25</a>
       </div>
@@ -264,7 +280,7 @@
       <section>
         <ul class="pagination">
           <li class="pagination-start">
-            <a href="#">
+            <a href="#" class="pagination-end-arrow">
               <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.84111 5.65875L0.932395 0.148752C0.829699 0.05349 0.690626 0 0.545642 0C0.400659 0 0.261586 0.05349 0.15889 0.148752C0.108543 0.195234 0.0685817 0.250534 0.041311 0.311464C0.0140403 0.372393 0 0.437746 0 0.503752C0 0.569758 0.0140403 0.635111 0.041311 0.69604C0.0685817 0.75697 0.108543 0.812271 0.15889 0.858752L5.6916 5.99875L0.15889 11.1688C0.108543 11.2152 0.0685817 11.2705 0.041311 11.3315C0.0140403 11.3924 0 11.4577 0 11.5238C0 11.5898 0.0140403 11.6551 0.041311 11.716C0.0685817 11.777 0.108543 11.8323 0.15889 11.8788C0.266426 11.9636 0.404942 12.0065 0.545642 11.9988C0.616091 11.9996 0.68594 11.9866 0.750698 11.9608C0.815455 11.935 0.873688 11.8968 0.921651 11.8488L6.84111 6.36875C6.89146 6.32227 6.93142 6.26697 6.95869 6.20604C6.98596 6.14511 7 6.07976 7 6.01375C7 5.94775 6.98596 5.88239 6.95869 5.82146C6.93142 5.76053 6.89146 5.70523 6.84111 5.65875Z" fill="white"/>
               </svg>
@@ -274,7 +290,7 @@
             <a href="#">1</a>
           </li>
           <li>
-            <a>2</a>
+            <a href="#">2</a>
           </li>
           <li>
             <a href="#">3</a>
@@ -286,8 +302,8 @@
             <a href="#">5</a>
           </li>
           <li class="pagination-end">
-            <a href="#">
-              <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#" class="pagination-end-arrow">
+              <svg  width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.84111 5.65875L0.932395 0.148752C0.829699 0.05349 0.690626 0 0.545642 0C0.400659 0 0.261586 0.05349 0.15889 0.148752C0.108543 0.195234 0.0685817 0.250534 0.041311 0.311464C0.0140403 0.372393 0 0.437746 0 0.503752C0 0.569758 0.0140403 0.635111 0.041311 0.69604C0.0685817 0.75697 0.108543 0.812271 0.15889 0.858752L5.6916 5.99875L0.15889 11.1688C0.108543 11.2152 0.0685817 11.2705 0.041311 11.3315C0.0140403 11.3924 0 11.4577 0 11.5238C0 11.5898 0.0140403 11.6551 0.041311 11.716C0.0685817 11.777 0.108543 11.8323 0.15889 11.8788C0.266426 11.9636 0.404942 12.0065 0.545642 11.9988C0.616091 11.9996 0.68594 11.9866 0.750698 11.9608C0.815455 11.935 0.873688 11.8968 0.921651 11.8488L6.84111 6.36875C6.89146 6.32227 6.93142 6.26697 6.95869 6.20604C6.98596 6.14511 7 6.07976 7 6.01375C7 5.94775 6.98596 5.88239 6.95869 5.82146C6.93142 5.76053 6.89146 5.70523 6.84111 5.65875Z" fill="white"/>
               </svg>
             </a>
@@ -353,11 +369,12 @@
       </section>
       <section class="footer-copyright">
         <h2 class="visually-hidden">Логотип академии</h2>
-        <a><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
+        <a href="https://up.htmlacademy.ru/htmlcss/29"><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
         <p class="logo-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
         </p>
       </section>
       </div>
     </footer>
+    <script src="js/script.js"></script>
     </body>
     </html>
