@@ -15,20 +15,20 @@
         </a>
         <ul class="site-navigation">
           <li class="site-menu-item">
-            <h3 class="site-menu-link"><a href="catalog.html">Каталог</a></h3>
+            <p class="site-menu-link"><a href="catalog.html">Каталог</a></p>
             <ul class="sub-menu">
               <li class="sub-menu-item"><a href="#" >Новинки</a></li>
               <li class="sub-menu-item"><a href="catalog.html" >Сливочное</a></li>
-              <li class="sub-menu-item"><a href="#">Щеррбеты</a></li>
+              <li class="sub-menu-item"><a href="#">Щербеты</a></li>
               <li class="sub-menu-item"><a href="#">Фруктовый лед</a></li>
               <li class="sub-menu-item"><a href="#">Мелорин</a></li>
             </ul>
           </li>
           <li class="site-menu-item">
-            <h3 class="site-menu-link"><a href="">Доставка и оплата</a></h3>
+            <p class="site-menu-link"><a href="">Доставка и оплата</a></p>
           </li>
           <li class="site-menu-item">
-            <h3 class="site-menu-link"><a href="">О компании</a></h3>
+            <p class="site-menu-link"><a href="">О компании</a></p>
           </li>
         </ul>
         <ul class="user-navigation">
@@ -38,9 +38,11 @@
               <path d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z" fill="currentColor"/>
             </svg>
           </a>
-            <div class="user-menu-tooltip">
-              тут форма поиска
-            </div>
+          <div class="user-menu-tooltip search-modal">
+            <form class="">
+              <input class="form-field search-field" type="text" name="date" placeholder="Крем-брюле">
+            </form>
+          </div>
           </li>
           <li class="user-navigation-item">
             <a class="user-links login-link" href="login.html">
@@ -50,8 +52,18 @@
               </svg>
               <span>Вход</span>
             </a>
-            <div class="user-menu-tooltip">
-              тут форма входа
+            <div class="user-menu-tooltip login-modal">
+              <form class="login-form">
+                <input class="form-field login-field" type="text" name="date" placeholder="email@example.com">
+                <input class="form-field login-field" type="text" name="date" placeholder=&#183;&#183;&#183;&#183;&#183;&#183 >
+                <div class="password-restore">
+                  <button class="button login-button" type="submit">Войти</button>
+                  <div class="restore-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </div>
+              </form>
             </div>
           </li>
           <li class="user-navigation-item">
@@ -176,7 +188,7 @@
           <div class="mailing-paper">
             <h3>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</h3>
             <form class="mailing-box">
-              <input class="email-field" type="text" name="date" placeholder="email@example.com">
+              <input class="form-field" type="text" name="date" placeholder="email@example.com">
               <button class="button mailing-button" type="submit">Отправить</button>
             </form>
           </div>
@@ -195,7 +207,7 @@
           <a href="tel:88124502525" class="contacts-tel">8 812 450-25-25</a>
           <p>(с 10 до 20 ежедневно)</p>
         </div>
-        <a class="button contacts-button" href="form.html">Форма обратной связи</a>
+        <a class="button contacts-button" href="#">Форма обратной связи</a>
       </div>
     </section>
     </main>
@@ -257,11 +269,33 @@
     </section>
     <section class="footer-copyright">
       <h2 class="visually-hidden">Логотип академии</h2>
-      <a><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
+      <a href="https://up.htmlacademy.ru/htmlcss/29"><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
       <p class="logo-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </section>
   </div>
   </footer>
+  <section class="modal contact-modal">
+    <h2>Мы обязательно вам ответим!</h2>
+    <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+      <div>
+        <label class="visually-hidden" for="contact-name">Имя</label>
+        <input class="form-field contact-name-field" id="contact-name" type="text" name="login" placeholder="Имя Фамилия">
+      </div>
+      <div>
+        <label class="visually-hidden" for="contact-email">Эмейл</label>
+        <input class="form-field contact-email-field" id="contact-email" type="email" placeholder="email@example.com">
+      </div>
+      <div>
+        <label class="visually-hidden" for="contact-text">Текст</label>
+        <textarea class="form-field contact-text-field" id="contact-text" type="text" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="button request-button" type="button">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+  <div class="overlay">
+  </div>
   </body>
+  <script src="js/script.js"></script>
 </html>

@@ -170,7 +170,7 @@ img {
 .site-menu-link {
   display: block;
   border-radius: 26px;
-  padding: 10px 13px;
+  padding: 7px 13px;
   margin: 0;
   font-size: 16px;
   font-weight: 700;
@@ -180,6 +180,7 @@ img {
 .site-active {
   background-color:#D07058;
   text-decoration: none;
+  color: var(--basic-white);
 }
 
 .site-active a {
@@ -194,7 +195,7 @@ img {
 .sub-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -8px;
   margin: 5px 0 0;
   background-color: var(--basic-white);
   opacity: 0;
@@ -204,6 +205,8 @@ img {
   border-radius: 4px;
   z-index: 6;
   padding-left: 0;
+  padding: 0 0 3px;
+  width: 143px;
 }
 
 .sub-menu::before {
@@ -215,6 +218,32 @@ img {
   height: 5px;
 }
 
+.sub-menu-item{
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.sub-menu-item:first-child {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.sub-menu-item:first-child::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  right: 9px;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+}
+
+.sub-menu-item:first-child a {
+  padding: 9px 20px 10px 21px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
 .sub-menu-item a{
   color: var(--basic-black);
   font-size: 14px;
@@ -222,8 +251,8 @@ img {
   font-weight: 400;
   line-height: 16px;
   display: block;
-  padding: 10px 20px;
-  text-align: center;
+  padding: 8px 20px 6px 21px;
+  text-align: left;
   text-decoration: none;
 }
 
@@ -1037,12 +1066,11 @@ img {
   font-weight: 400;
 }
 
-.email-field {
+.form-field {
   background: var(--basic-white);
   box-sizing: border-box;
   border-radius: 6px;
   font-family: 'Roboto',"Arial", sans-serif;
-  line-height: 24px;
   line-height: 24px;
   font-size: 16px;
   border: 1px solid var(--basic-grey);
@@ -1053,17 +1081,19 @@ img {
   font-weight: 700;
 }
 
-.email-field::placeholder {
+.form-field::placeholder {
   font-weight: 400;
 }
 
-.email-field:hover {
+.form-field:hover {
   border: 2px solid var(--basic-grey);
+  padding: 0 1px 0 13px;
 }
 
-.email-field:active,
-.email-field:focus {
+.form-field:active,
+.form-field:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
+  padding: 0 1px 0 13px;
   line-height: 20px;
   outline: none
 }
@@ -1071,8 +1101,8 @@ img {
 .login-field {
   width: 241px;
   font-size: 14px;
-  font-weight: 400;
   line-height: 16px;
+  font-weight: 700;
 }
 
 .search-modal {
@@ -1082,7 +1112,7 @@ img {
 .search-field {
   width: 311px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 16px;
 }
 
@@ -1374,6 +1404,108 @@ img {
   position: relative;
 }
 
-.map-pin {
+/* Modal login */
 
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: var(--basic-black);
+  background: #F8F7F4;
+  border-radius: 6px;
+  background-position: 0 0;
+  background-repeat: repeat;
+  z-index: 8;
+
+}
+
+.contact-modal {
+  top: 338px;
+  bottom: auto;
+  width: 430px;
+  padding: 17px 25px 24px 23px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-modal h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-name-field,
+.contact-email-field {
+  width: 267px;
+}
+
+.contact-text-field {
+  width: 428px;
+  height: 154px;
+  margin-bottom: 19px;
+  padding-top: 10px;
+}
+
+.request-button {
+  margin-left: auto;
+  padding: 11px 24px;
+}
+
+.contact-name-field {
+  margin-top: 19px;
+  margin-bottom: 20px;
+}
+
+.contact-email-field {
+  margin-bottom: 20px;
+}
+
+.contact-text-field:hover
+ {
+  padding: 1px 1px 1px 13px;
+  padding-top: 9px;
+}
+
+.contact-text-field:active,
+.contact-text-field:focus
+{
+  padding: 1px 1px 1px 13px;
+  padding-top: 11px;
+}
+.contact-text-field::placeholder {
+  text-align: start;
+  margin-top: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  width: 18px;
+  height: 17px;
+  background: url(../img/x-big.svg);
+  border: 0;
+  cursor: pointer;
+}
+
+.overlay
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 7;
+}
+
+.modal-show {
+  display: block;
 }

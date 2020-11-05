@@ -1,7 +1,14 @@
-var cart_popup = document.querySelector('.cart-list');
-cart_popup.classList.add('cart-list--show');
+const feedbackLink = document.querySelector(".contacts-button");
+const contactPopup = document.querySelector(".modal");
+const contactClose = loginPopup.querySelector(".modal-close");
 
-var openPopupButton = document.querySelector('.cart-link');
-openPopupButton.addEventListener('click', function () {
 
+feedbackLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  contactPopup.classList.add("modal-show");
+});
+
+contactClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  contactPopup.classList.remove("modal-show");
 });
