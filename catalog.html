@@ -38,8 +38,8 @@
             </svg>
           </a>
             <div class="user-menu-tooltip search-modal">
-              <form class="">
-                <input class="form-field search-field" type="text" name="date" placeholder="Крем-брюле">
+              <form class="" action="https://echo.htmlacademy.ru" method="post">
+                <input class="form-field search-field" type="text" name="search" placeholder="Крем-брюле">
               </form>
             </div>
           </li>
@@ -52,9 +52,9 @@
               <span>Вход</span>
             </a>
             <div class="user-menu-tooltip login-modal">
-              <form class="login-form">
-                <input class="form-field login-field" type="text" name="date" placeholder="email@example.com">
-                <input class="form-field login-field" type="text" name="date" placeholder=&#183;&#183;&#183;&#183;&#183;&#183 >
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <input class="form-field login-field" type="email" name="email" placeholder="email@example.com">
+                <input class="form-field login-field" type="password" name="password" placeholder="······">
                 <div class="password-restore">
                   <button class="button login-button" type="submit">Войти</button>
                   <div class="restore-links">
@@ -80,14 +80,14 @@
                 <ul class="cart-list-item">
                   <li class="cart-item">
                     <button type="button" class="product-removal"></button>
-                    <div  class="product-ava"><img src="img/icecream-ava1.png"></div>
+                    <div  class="product-ava"><img src="img/icecream-ava1.png" alt="product1-ava"></div>
                     <span class="product-name">Пломбир с апельсиновым джемом</span>
                     <span class="product-price">1,5 кг х <span class="product-price-kg"> 200 руб.</span> </span>
                     <span>300 руб.</span>
                   </li>
                   <li class="cart-item">
-                    <input type="button" class="product-removal">
-                    <div class="product-ava"><img src="img/icecream-ava2.png"></div>
+                    <button type="button" class="product-removal"></button>
+                    <div class="product-ava"><img src="img/icecream-ava2.png" alt="product1-ava"></div>
                     <span class="product-name">Клубничный пломбир с присыпкой<br> из белого шоколада </span>
                     <span class="product-price">1,5 кг х <span class="product-price-kg">300 руб.</span> </span>
                     <span>450 руб.</span>
@@ -121,26 +121,44 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="sorting-title">
             <legend>Сортировка:</legend>
+            <a href="#" class="sorting-filter">по популярности
+            <svg class="filter-arrow" width="11" height="10" viewBox="0 0 11 10" fill="currenColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#ECF1EE"/>
+              </svg>
+            </a>
+            <ul class="sorting-types">
+              <li class="sorting-type"><a href="#">по популярности</a></li>
+              <li class="sorting-type"><a href="#">сначала недорогие</a></li>
+              <li class="sorting-type"><a href="#">сначала дорогие</a></li>
+              <li class="sorting-type"><a href="#">по жирности</a></li>
+            </ul>
           </fieldset>
-          <fieldset>
-            <legend>Цена:</legend>
+          <fieldset class="price-title">
+            <legend>Цена: 100 P - 500 P</legend>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="fatness-title">
             <legend>Жирность:</legend>
-            <ul>
+            <ul class="fatness-radio">
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="fat-type" value="0" id="filter-0">
                 <label for="filter-0">0%</label>
               </li>
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="fat-type" value="10" id="filter-10" checked>
-                <label for="filter-10">10%</label>
+                <label for="filter-10">до 10%</label>
               </li>
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="fat-type" value="30" id="filter-30">
-                <label for="filter-30">30%</label>
+                <label for="filter-30">до 30%</label>
               </li>
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="fat-type" value="30+" id="filter-more">
@@ -148,32 +166,32 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="syrop-title">
             <legend>Наполнители:</legend>
-            <ul>
+            <ul class="content-checkbox">
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="chocolate" id="filter-chocolate" checked>
                 <label for="filter-chocolate">Шоколадные</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="sugar" id="filter-sugar" checked>
-                <label for="filter-sugar">Сахарные пески</label>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="sugar" id="filter-sugar">
+                <label for="filter-sugar">Сахарные пресыпки</label>
               </li>
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="fruits" id="filter-fruits" checked>
                 <label for="filter-fruits">Фрукты</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="syrop" id="filter-syrop" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="syrop" id="filter-syrop">
                 <label for="filter-syrop">сиропы</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="jam" id="filter-jam" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="jam" id="filter-jam">
                 <label for="filter-jam">джемы</label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Применить</button>
+          <div><button type="submit" class="filter-button button">Применить</button></div>
         </form>
       </section>
       <section>
@@ -278,6 +296,7 @@
         </div>
       </section>
       <section>
+        <h2 class="visually-hidden">Страницы</h2>
         <ul class="pagination">
           <li class="pagination-start">
             <a href="#" class="pagination-end-arrow">
@@ -369,7 +388,7 @@
       </section>
       <section class="footer-copyright">
         <h2 class="visually-hidden">Логотип академии</h2>
-        <a href="https://up.htmlacademy.ru/htmlcss/29"><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
         <p class="logo-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
         </p>
       </section>

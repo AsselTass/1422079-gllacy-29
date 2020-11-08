@@ -1,6 +1,6 @@
 const feedbackLink = document.querySelector(".contacts-button");
 const contactPopup = document.querySelector(".modal");
-const contactClose = loginPopup.querySelector(".modal-close");
+const contactClose = contactPopup.querySelector(".modal-close");
 
 
 feedbackLink.addEventListener("click", function (evt) {
