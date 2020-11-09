@@ -121,19 +121,14 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="sorting-title">
+          <fieldset class="sorting-types">
             <legend>Сортировка:</legend>
-            <a href="#" class="sorting-filter">по популярности
-            <svg class="filter-arrow" width="11" height="10" viewBox="0 0 11 10" fill="currenColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L0 0H11" fill="#ECF1EE"/>
-              </svg>
-            </a>
-            <ul class="sorting-types">
-              <li class="sorting-type"><a href="#">по популярности</a></li>
-              <li class="sorting-type"><a href="#">сначала недорогие</a></li>
-              <li class="sorting-type"><a href="#">сначала дорогие</a></li>
-              <li class="sorting-type"><a href="#">по жирности</a></li>
-            </ul>
+            <select name="sorting" id="sorting-field">
+              <option value="sort-by-popularity">по популярности</option>
+              <option value="expensive-first">сначала недорогие</option>
+              <option value="cheap-first">сначала дорогие</option>
+              <option value="sort-by-fat">по жирности</option>
+            </select>
           </fieldset>
           <fieldset class="price-title">
             <legend>Цена: 100 P - 500 P</legend>
@@ -191,7 +186,7 @@
               </li>
             </ul>
           </fieldset>
-          <div><button type="submit" class="filter-button button">Применить</button></div>
+          <button type="submit" class="filter-button button">Применить</button>
         </form>
       </section>
       <section>

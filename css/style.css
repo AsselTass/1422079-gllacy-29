@@ -786,7 +786,7 @@ img {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   width: 647px;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .filter-checkbox {
@@ -817,8 +817,39 @@ img {
   align-items: center;
 }
 
+.sorting-types select {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 9px 36px 9px 16px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 10L0 0H11' fill='%23ECF1EE'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 11px auto;
+  background-position: right 13px center;
+  border: 0;
+  border-radius: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
 .sorting-types {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: none;
+  width: 196px;
+  color: #fff;
+ /* position: absolute;
   color: var(--basic-black);
   margin: 0 0 0;
   background-color: var(--basic-white);
@@ -830,53 +861,24 @@ img {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  z-index: 9;
+  z-index: 9; */
 }
 
-.sorting-type {
-  margin-bottom: 1px;
-}
-
-.sorting-type a{
-  padding: 2px 49px 3px 20px;
-  color: var(--basic-black);
-  text-decoration: none;
-  display: block;
-  text-align: left;
+.sorting-types option {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .sorting-types:first-child a {
   padding: 8px 49px 2px 20px;
 }
 
-.sorting-filter:hover path {
-  fill: var(--basic-black);
-}
-
-.sorting-type a:hover{
-  color: var(--basic-white);
-  background: #1E90FF;
-}
-
-.sorting-filter:hover,
-.sorting-filter:focus +.sorting-filter,
-.sorting-types:hover +.sorting-filter,
-.sorting-types:focus-within +.sorting-filter,
-.sorting-filter:active {
-  background: var(--basic-white);
+.sorting-types select:hover,
+.sorting-types select:focus {
+  background-image: url(../img/arrow-down-black.svg);
   color: var(--basic-black);
-}
-
-.sorting-filter:hover +.sorting-types,
-.sorting-filter:focus +.sorting-types,
-.sorting-types:hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.sorting-types:focus-within {
-  opacity: 1;
-  pointer-events: auto;
+  font-weight: 500;
 }
 
 .filter-arrow {
@@ -1020,6 +1022,10 @@ img {
 
 .fatness-title {
   padding-left: 3px;
+}
+
+.syrop-title legend {
+  margin-bottom: 5px;
 }
 
 .additional-topping {
