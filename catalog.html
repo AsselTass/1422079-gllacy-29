@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -39,7 +40,8 @@
           </a>
             <div class="user-menu-tooltip search-modal">
               <form class="" action="https://echo.htmlacademy.ru" method="post">
-                <input class="form-field search-field" type="text" name="search" placeholder="Крем-брюле">
+                <label class="visually-hidden" for="search-input">Поле поиска</label>
+                <input class="form-field search-field" id="search-input" type="text" name="search" placeholder="Крем-брюле">
               </form>
             </div>
           </li>
@@ -53,8 +55,10 @@
             </a>
             <div class="user-menu-tooltip login-modal">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="form-field login-field" type="email" name="email" placeholder="email@example.com">
-                <input class="form-field login-field" type="password" name="password" placeholder="······">
+                <label class="visually-hidden" for="login-email">Почта для логина</label>
+                  <input class="form-field login-field" id="login-email" type="email" name="email" placeholder="email@example.com">
+                  <label class="visually-hidden" for="password-email">Пароль</label>
+                  <input class="form-field login-field" id="password-email" type="password" name="password" placeholder="······">
                 <div class="password-restore">
                   <button class="button login-button" type="submit">Войти</button>
                   <div class="restore-links">
@@ -66,7 +70,7 @@
             </div>
           </li>
           <li class="user-navigation-item">
-            <a class="user-links cart-link" href="">
+            <a class="user-links cart-link active-cart" href="">
               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="#343434"/>
                 <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" fill="#343434"/>
@@ -80,14 +84,14 @@
                 <ul class="cart-list-item">
                   <li class="cart-item">
                     <button type="button" class="product-removal"></button>
-                    <div  class="product-ava"><img src="img/icecream-ava1.png" alt="product1-ava"></div>
+                    <div  class="product-ava"><img src="img/icecream-ava1.png" alt="product1-ava" width="33" height="33"></div>
                     <span class="product-name">Пломбир с апельсиновым джемом</span>
                     <span class="product-price">1,5 кг х <span class="product-price-kg"> 200 руб.</span> </span>
                     <span>300 руб.</span>
                   </li>
                   <li class="cart-item">
                     <button type="button" class="product-removal"></button>
-                    <div class="product-ava"><img src="img/icecream-ava2.png" alt="product1-ava"></div>
+                    <div class="product-ava"><img src="img/icecream-ava2.png" alt="product1-ava" width="33" height="33"></div>
                     <span class="product-name">Клубничный пломбир с присыпкой<br> из белого шоколада </span>
                     <span class="product-price">1,5 кг х <span class="product-price-kg">300 руб.</span> </span>
                     <span>450 руб.</span>
@@ -123,6 +127,7 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="sorting-types">
             <legend>Сортировка:</legend>
+            <label class="visually-hidden" for="sorting-field">Сортировка</label>
             <select name="sorting" id="sorting-field">
               <option value="sort-by-popularity">по популярности</option>
               <option value="expensive-first">сначала недорогие</option>
@@ -293,7 +298,7 @@
       <section>
         <h2 class="visually-hidden">Страницы</h2>
         <ul class="pagination">
-          <li class="pagination-start">
+          <li class="pagination-start non-active">
             <a href="#" class="pagination-end-arrow">
               <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.84111 5.65875L0.932395 0.148752C0.829699 0.05349 0.690626 0 0.545642 0C0.400659 0 0.261586 0.05349 0.15889 0.148752C0.108543 0.195234 0.0685817 0.250534 0.041311 0.311464C0.0140403 0.372393 0 0.437746 0 0.503752C0 0.569758 0.0140403 0.635111 0.041311 0.69604C0.0685817 0.75697 0.108543 0.812271 0.15889 0.858752L5.6916 5.99875L0.15889 11.1688C0.108543 11.2152 0.0685817 11.2705 0.041311 11.3315C0.0140403 11.3924 0 11.4577 0 11.5238C0 11.5898 0.0140403 11.6551 0.041311 11.716C0.0685817 11.777 0.108543 11.8323 0.15889 11.8788C0.266426 11.9636 0.404942 12.0065 0.545642 11.9988C0.616091 11.9996 0.68594 11.9866 0.750698 11.9608C0.815455 11.935 0.873688 11.8968 0.921651 11.8488L6.84111 6.36875C6.89146 6.32227 6.93142 6.26697 6.95869 6.20604C6.98596 6.14511 7 6.07976 7 6.01375C7 5.94775 6.98596 5.88239 6.95869 5.82146C6.93142 5.76053 6.89146 5.70523 6.84111 5.65875Z" fill="white"/>
@@ -301,7 +306,7 @@
             </a>
           </li>
           <li>
-            <a href="#">1</a>
+            <a class="active-page" href="#">1</a>
           </li>
           <li>
             <a href="#">2</a>
@@ -383,8 +388,8 @@
       </section>
       <section class="footer-copyright">
         <h2 class="visually-hidden">Логотип академии</h2>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
-        <p class="logo-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
+        <p class="logo-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019
         </p>
       </section>
       </div>

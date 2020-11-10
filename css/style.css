@@ -19,7 +19,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto',"Arial", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -85,6 +85,7 @@ img {
 .button:active {
   background: var(--red-darker), var(--red-gradient);
   box-shadow: 0 2px 2px 0 #942718 inset;
+  outline: none;
 }
 
 .contacts-button {
@@ -115,6 +116,7 @@ img {
   background-repeat: no-repeat;
   background-position: center 83px;
 }
+
 /* Main header */
 
 .main-header {
@@ -178,11 +180,6 @@ img {
 
 .site-active a {
   border-bottom: none;
-}
-
-.cart-link {
-  background-color: var(--basic-white);
-  color: var(--basic-black);
 }
 
 .sub-menu {
@@ -269,10 +266,12 @@ img {
   pointer-events: auto;
 }
 
+/*
 .site-menu-link,
 .user-navigation a {
   color: var(--basic-white);
 }
+*/
 
 .search-link:hover,
 .login-link:hover,
@@ -289,11 +288,11 @@ img {
   box-shadow: inset 0 2px 1px #696969;
 }
 
-.site-menu-link:hover a{
+.site-menu-link:hover a {
   color: var(--basic-black);
 }
 
-.site-menu-link:active a{
+.site-menu-link:active a {
   color: var(--basic-black);
 }
 
@@ -382,6 +381,11 @@ img {
   flex-direction: column;
 }
 
+.active-cart {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
 .login-link:hover +.user-menu-tooltip,
 .search-link:hover +.user-menu-tooltip,
 .cart-link:hover +.user-menu-tooltip {
@@ -441,7 +445,7 @@ img {
 }
 
 .product-removal {
-  background: url(../img/x.svg);
+  background: url("../img/x.svg");
   width: 11px;
   height: 11px;
   border: none;
@@ -518,6 +522,7 @@ img {
   font-weight: 700;
   color: var(--basic-white);
   margin-top: 8px;
+  vertical-align: middle;
 }
 
 .breadcrumbs {
@@ -546,7 +551,7 @@ img {
 }
 
 .breadcrumbs-next::after {
-  background-image: url(../img/breadcrums-arrow.svg);
+  background-image: url("../img/breadcrums-arrow.svg");
   position: absolute;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -561,9 +566,10 @@ img {
   list-style: none;
 }
 
+/*
 .page-catalog a {
   color: var(--basic-white);
-}
+}*/
 
 .page-catalog h1 {
   font-size: 35px;
@@ -581,6 +587,11 @@ img {
   margin: 0;
   padding: 48px 0 31px;
   margin-right: -9px;
+}
+
+.active-page {
+  background: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .pagination a {
@@ -605,9 +616,13 @@ img {
   color: var(--basic-black);
 }
 
-.pagination-end-arrow:active path {
-  fill: var(--basic-black);
+.pagination-start a:hover,
+.pagination-start a:active,
+.pagination-end a:hover,
+.pagination-end a:active {
+  background: none;
 }
+
 .pagination li {
   margin-left: 4px;
 }
@@ -626,7 +641,7 @@ img {
   padding: 4px 10px;
 }
 
-.pagination-start path{
+.non-active path{
   fill: rgba(255, 255, 255, 0.2);
 }
 
@@ -657,6 +672,7 @@ img {
   text-align: center;
   display: inline-block;
   margin-left: -15px;
+  vertical-align: middle;
 }
 
 .slide {
@@ -780,6 +796,7 @@ img {
   box-shadow: inset 0 2px 1px #696969;
   border: none;
   padding: 9px 28px;
+  outline: none;
 }
 
 .content-checkbox {
@@ -878,7 +895,7 @@ img {
 
 .sorting-types select:hover,
 .sorting-types select:focus {
-  background-image: url(../img/arrow-down-black.svg);
+  background-image: url("../img/arrow-down-black.svg");
   color: var(--basic-black);
   font-weight: 500;
 }
@@ -889,7 +906,7 @@ img {
 
 .filter-input-checkbox:hover + label::before,
 .filter-input-checkbox:focus + label::before {
-  background-image: url(../img/checkbox-label-hover.svg);
+  background-image: url("../img/checkbox-label-hover.svg");
 }
 
 .filter-option label {
@@ -907,7 +924,7 @@ img {
   width: 20px;
   height: 20px;
   /*border: 2px solid rgba(255, 255, 255, 0.8);*/
-  background-image: url(../img/checkbox-label.svg);
+  background-image: url("../img/checkbox-label.svg");
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -917,12 +934,12 @@ img {
   left: -30px;
   width: 24px;
   height: 20px;
-  background-image: url(../img/checkbox-checked.svg);
+  background-image: url("../img/checkbox-checked.svg");
 }
 
 .filter-input-checkbox:checked:hover + label::before,
 .filter-input-checkbox:checked:focus + label::before {
-  background-image: url(../img/checkbox-checked-hover.svg);
+  background-image: url("../img/checkbox-checked-hover.svg");
 }
 
 .filter-input-radio + label::before {
@@ -1060,6 +1077,7 @@ img {
   display: inline-block;
   margin-top: auto;
   margin-left: auto;
+  vertical-align: middle;
 }
 
 .topping {
@@ -1073,21 +1091,24 @@ img {
 }
 
 .raspberry {
-  background-image: url(../img/raspberrybg.png);
+  background-image: url("../img/raspberrybg.png");
+  background-color: crimson;
 }
 
 .chocolate {
-  background-image: url(../img/chocolatebg.png);
+  background-image: url("../img/chocolatebg.png");
+  background-color: chocolate;
 }
 
 /* Features */
 
 .features {
-  background-image: url(../img/wafflegb.png);
+  background-image: url("../img/wafflegb.png");
   margin: 9px 0 40px;
   background-position: center;
   border-radius: 16px;
   padding: 24px 20px 23px;
+  background-color: wheat;
 }
 
 .feature-list {
@@ -1127,19 +1148,19 @@ img {
 }
 
 .ice-item::before {
-  background-image: url(../img/ice-icon.svg);
+  background-image: url("../img/ice-icon.svg");
 }
 
 .cow-item::before {
-  background-image: url(../img/cow-icon.svg);
+  background-image: url("../img/cow-icon.svg");
 }
 
 .leaf-item::before {
-  background-image: url(../img/leaf-icon.svg);
+  background-image: url("../img/leaf-icon.svg");
 }
 
 .thermometr-item::before {
-  background-image: url(../img/thermometer-icon.svg);
+  background-image: url("../img/thermometer-icon.svg");
 }
 
 .feature-description {
@@ -1238,10 +1259,11 @@ img {
 
 .blog {
   color: var(--basic-black);
-  background-image: url(../img/strawberrybg.png);
+  background-image: url("../img/strawberrybg.png");
   padding-right:257px;
   padding-left: 20px;
   padding-top: 19px;
+  background-color: white;
 }
 
 .blog h3 {
@@ -1285,7 +1307,7 @@ img {
 }
 
 .mailing {
-  background-image: url(../img/postbg.png);
+  background-image: url("../img/postbg.png");
 }
 
 .mailing-paper {
@@ -1388,6 +1410,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 28px;
+  vertical-align: middle;
 }
 
 .contacts h3,
@@ -1581,7 +1604,7 @@ img {
 }
 
 .useful-links-items::before {
-  background-image: url(../img/heart-icon.svg);
+  background-image: url("../img/heart-icon.svg");
   position: absolute;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1721,7 +1744,7 @@ img {
   right: 17px;
   width: 18px;
   height: 17px;
-  background: url(../img/x-big.svg);
+  background: url("../img/x-big.svg");
   border: 0;
   cursor: pointer;
 }

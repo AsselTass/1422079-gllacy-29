@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -40,7 +41,8 @@
             </a>
             <div class="user-menu-tooltip search-modal">
               <form class="" action="https://echo.htmlacademy.ru" method="post">
-                <input class="form-field search-field" type="text" name="search" placeholder="Крем-брюле">
+                <label class="visually-hidden" for="search-input">Поле поиска</label>
+                <input class="form-field search-field" id="search-input" type="text" name="search" placeholder="Крем-брюле">
               </form>
             </div>
             </li>
@@ -54,8 +56,10 @@
               </a>
               <div class="user-menu-tooltip login-modal">
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="form-field login-field" type="email" name="email" placeholder="email@example.com">
-                  <input class="form-field login-field" type="password" name="password" placeholder="······">
+                  <label class="visually-hidden" for="login-email">Почта для логина</label>
+                  <input class="form-field login-field" id="login-email" type="email" name="email" placeholder="email@example.com">
+                  <label class="visually-hidden" for="password-email">Пароль</label>
+                  <input class="form-field login-field" id="password-email" type="password" name="password" placeholder="······">
                   <div class="password-restore">
                     <button class="button login-button" type="submit">Войти</button>
                     <div class="restore-links">
@@ -67,7 +71,7 @@
               </div>
             </li>
             <li class="user-navigation-item">
-              <a class="user-links" href="">
+              <a class="user-links cart-link" href="">
                 <svg class="user-links-icon" width="21" height="20"  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="currentColor"/>
                   <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="currentColor"/>
@@ -134,7 +138,7 @@
           <div class="hit-catalog">
             <div class="hit-catalog-item">
               <img src="img/hit1.png" alt="Мороженое хит1" width="270" height="270">
-              <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг">
+              <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг" width="61" height="61">
               <p class="catalog-item-price">310 Р<span>/кг</span></p>
               <h3 class="catalog-item-title">
                 <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -143,7 +147,7 @@
             </div>
             <div class="hit-catalog-item">
               <img src="img/hit2.png" alt="Мороженое хит2" width="270" height="270">
-              <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг">
+              <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг" width="61" height="61">
               <p class="catalog-item-price">380 Р<span>/кг</span></p>
               <h3 class="catalog-item-title">
                 <a href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -152,7 +156,7 @@
             </div>
             <div class="hit-catalog-item">
               <img src="img/hit3.png" alt="Мороженое хит3" width="270" height="270">
-              <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг">
+              <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг" width="61" height="61">
               <p class="catalog-item-price">355 Р<span>/кг</span></p>
               <h3 class="catalog-item-title">
                 <a href="#">Сливочно-клубничное <br>с присыпкой из белого шоколада</a>
@@ -161,7 +165,7 @@
             </div>
             <div class="hit-catalog-item">
               <img src="img/hit4.png" alt="Мороженое хит4" width="270" height="270">
-              <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг">
+              <img src="img/hit-tag.png" class="hit-tag" alt="Хит тэг" width="61" height="61">
               <p class="catalog-item-price">415 Р<span>/кг</span></p>
               <h3 class="catalog-item-title">
                 <a href="#">Сливочное крем-брюле <br>с карамельной подливкой</a>
@@ -188,7 +192,8 @@
             <div class="mailing-paper">
               <h3>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</h3>
               <form class="mailing-box" action="https://echo.htmlacademy.ru" method="post">
-                <input class="form-field" type="email" name="date" placeholder="email@example.com">
+                <label class="visually-hidden" for="subscribe-email">Почта</label>
+                <input class="form-field" type="email" id="subscribe-email" name="date" placeholder="email@example.com">
                 <button class="button mailing-button" type="submit">Отправить</button>
               </form>
             </div>
@@ -196,7 +201,7 @@
         </section>
       </div>
       <section class="map">
-      <img class="map-image" src="img/map-pin.png" alt="Адрес Пин" height ="430">
+      <img class="map-image" src="img/map-pin.png" alt="Адрес Пин" height ="430" width="1200">
       <div class="contacts">
         <div class="contacts-address">
           <h3>Адрес главного офиса и офлайн-магазина: </h3>
@@ -269,8 +274,8 @@
         </section>
         <section class="footer-copyright">
           <h2 class="visually-hidden">Логотип академии</h2>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
-          <p class="logo-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/academy-logo.svg" width="108" height="39" alt="Логотип академии"></a>
+          <p class="logo-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019
           </p>
         </section>
       </div>
