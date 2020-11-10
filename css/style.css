@@ -172,16 +172,6 @@ img {
   line-height: 18px;
 }
 
-.site-active {
-  background-color:#D07058;
-  text-decoration: none;
-  color: var(--basic-white);
-}
-
-.site-active a {
-  border-bottom: none;
-}
-
 .sub-menu {
   position: absolute;
   top: 100%;
@@ -244,6 +234,22 @@ img {
   padding: 8px 20px 6px 21px;
   text-align: left;
   text-decoration: none;
+}
+
+
+.site-active {
+  background-color:#D07058;
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.site-active a {
+  border-bottom: none;
+  color: var(--basic-white);
+}
+
+.site-active a:hover {
+  color: var(--basic-black);
 }
 
 .sub-menu-item a:hover {
