@@ -150,6 +150,8 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  width: 651px;
 }
 
 .site-menu-link a {
@@ -308,8 +310,10 @@ img {
   align-items: center;
   margin: 0;
   position: relative;
-   margin-left: auto;
+  margin-left: auto;
   list-style: none;
+  width: 291px;
+  flex-wrap: wrap;
 }
 
 .user-navigation-item {
@@ -593,6 +597,7 @@ img {
   margin: 0;
   padding: 48px 0 31px;
   margin-right: -9px;
+  flex-wrap: wrap;
 }
 
 .active-page {
@@ -1304,7 +1309,7 @@ img {
   margin: 0;
   font-style: normal;
   text-align: left;
-  font-family: 'Roboto',"Arial", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1334,7 +1339,7 @@ img {
   background: var(--basic-white);
   box-sizing: border-box;
   border-radius: 6px;
-  font-family: 'Roboto',"Arial", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 24px;
   font-size: 16px;
   border: 1px solid var(--basic-grey);

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -60,7 +60,7 @@
                   <label class="visually-hidden" for="password-email">Пароль</label>
                   <input class="form-field login-field" id="password-email" type="password" name="password" placeholder="······">
                 <div class="password-restore">
-                  <button class="button login-button" type="submit">Войти</button>
+                  <button class="button login-button" type="submit" aria-label="Вход">Войти</button>
                   <div class="restore-links">
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
@@ -83,14 +83,14 @@
               <div class="cart-list">
                 <ul class="cart-list-item">
                   <li class="cart-item">
-                    <button type="button" class="product-removal"></button>
+                    <button type="button" class="product-removal" aria-label="Убрать из корзины"></button>
                     <div  class="product-ava"><img src="img/icecream-ava1.png" alt="product1-ava" width="33" height="33"></div>
                     <span class="product-name">Пломбир с апельсиновым джемом</span>
                     <span class="product-price">1,5 кг х <span class="product-price-kg"> 200 руб.</span> </span>
                     <span>300 руб.</span>
                   </li>
                   <li class="cart-item">
-                    <button type="button" class="product-removal"></button>
+                    <button type="button" class="product-removal" aria-label="Убрать из корзины"></button>
                     <div class="product-ava"><img src="img/icecream-ava2.png" alt="product1-ava" width="33" height="33"></div>
                     <span class="product-name">Клубничный пломбир с присыпкой<br> из белого шоколада </span>
                     <span class="product-price">1,5 кг х <span class="product-price-kg">300 руб.</span> </span>
@@ -191,7 +191,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Применить</button>
+          <button type="submit" class="filter-button button" aria-label="Фильтровать">Применить</button>
         </form>
       </section>
       <section>
@@ -336,7 +336,7 @@
           <h2 class="visually-hidden">Давайте дружить!</h2>
           <ul class="social-list">
             <li>
-              <a class="facebook-icon" href="#">
+              <a class="facebook-icon" href="#" aria-label="Фейсбук">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
                   <path d="M18 2C14.8355 2 11.7421 2.93838 9.11088 4.69649C6.4797 6.45459 4.42894 8.95345 3.21793 11.8771C2.00693 14.8007 1.69008 18.0177 2.30744 21.1214C2.92481 24.2251 4.44866 27.0761 6.6863 29.3137C8.92394 31.5513 11.7749 33.0752 14.8786 33.6926C17.9823 34.3099 21.1993 33.9931 24.1229 32.7821C27.0466 31.5711 29.5454 29.5203 31.3035 26.8891C33.0616 24.2579 34 21.1645 34 18C34 13.7565 32.3143 9.68687 29.3137 6.68629C26.3131 3.68571 22.2435 2 18 2ZM22.06 11.45H19V14.9H22V18.34H19V27H16V18.34H13V14.9H16V11.45C15.9449 10.5957 16.2291 9.75426 16.7908 9.1083C17.3525 8.46234 18.1464 8.06407 19 8H22V11.45H22.06Z" fill="white" fill-opacity="0.8"/>
@@ -344,7 +344,7 @@
               </a>
             </li>
             <li>
-              <a class="vkontakte-icon" href="#">
+              <a class="vkontakte-icon" href="#" aria-label="Вконтакте">
                 <span class="visually-hidden">Вконтакте</span>
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
@@ -355,7 +355,7 @@
               </a>
             </li>
             <li>
-              <a class="instagram-icon" href="#">
+              <a class="instagram-icon" href="#" aria-label="Инстаграм">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
                   <g opacity="0.8">
@@ -368,7 +368,7 @@
               </a>
             </li>
             <li>
-              <a class="twitter-icon" href="#">
+              <a class="twitter-icon" href="#" aria-label="Твиттер">
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18 35C27.3888 35 35 27.3888 35 18C35 8.61116 27.3888 1 18 1C8.61116 1 1 8.61116 1 18C1 27.3888 8.61116 35 18 35Z" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
                   <path d="M18 2C14.8355 2 11.7421 2.93838 9.11088 4.69649C6.4797 6.45459 4.42894 8.95345 3.21793 11.8771C2.00693 14.8007 1.69008 18.0177 2.30744 21.1214C2.92481 24.2251 4.44866 27.0761 6.6863 29.3137C8.92394 31.5513 11.7749 33.0752 14.8786 33.6926C17.9823 34.3099 21.1993 33.9931 24.1229 32.7821C27.0466 31.5711 29.5454 29.5203 31.3035 26.8891C33.0616 24.2579 34 21.1645 34 18C34 13.7565 32.3143 9.68687 29.3137 6.68629C26.3131 3.68571 22.2435 2 18 2ZM25.94 14.81C25.69 21.33 22.48 25.64 14.94 25.51H14.46C14.01 25.51 9.91001 25.07 9.11001 23.69C10.8989 23.9555 12.7228 23.5494 14.23 22.55C13.18 22.26 11.31 22.09 10.98 19.7C11.3928 19.8642 11.8441 19.9058 12.28 19.82C11 19 9.53001 18.3 9.61001 16.17C10.028 16.4893 10.5445 16.652 11.07 16.63C10.3 16.4 8.92001 13.39 10.07 11.85C12.07 13.64 14.14 15.33 17.87 15.49C18.1 13.28 19.11 11.79 21.04 11.17C21.7375 10.9333 22.4908 10.9157 23.1986 11.1195C23.9065 11.3232 24.5351 11.7387 25 12.31C25.74 12.08 26.45 11.84 27.19 11.62C27.1758 11.9571 27.0846 12.2865 26.9234 12.5829C26.7622 12.8793 26.5353 13.1349 26.26 13.33C26.5167 13.3601 26.7768 13.3336 27.0221 13.2524C27.2674 13.1712 27.492 13.0372 27.68 12.86C27.5628 13.2985 27.3443 13.7034 27.0421 14.0421C26.7399 14.3808 26.3624 14.6438 25.94 14.81Z" fill="white" fill-opacity="0.8"/>
@@ -394,6 +394,6 @@
       </section>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script-min.js"></script>
     </body>
     </html>
